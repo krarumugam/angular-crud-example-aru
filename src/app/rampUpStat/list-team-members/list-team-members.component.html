@@ -1,0 +1,98 @@
+<div class="table-responsive-sm">
+  <table class="table table-bordered table-sm">
+      <thead class="thead-dark">
+        <tr class="d-flex">
+          <th class="col-1" scope="col">#</th>
+          <th class="col-2" scope="col">Name</th>
+          <th class="col-2"scope="col">Email ID</th>
+          <th class="col-1" scope="col">Phone Number</th>
+          <th class="col-1" scope="col">Date Of Joining</th>
+          <th class="col-1" scope="col">Active</th>
+          <th class="col-1" scope="col">Photo</th>
+          <th class="col-1" scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="d-flex" *ngFor="let teamMember of teamMembers">
+          <td class="col-1" > {{teamMember.id}} </td>
+          <td class="col-2" > {{teamMember.name}} </td>
+          <td class="col-2" > {{teamMember.email}} </td>
+          <td class="col-1" > {{teamMember.phoneNo}} </td>
+          <td class="col-1" > {{teamMember.doj}} </td>
+          <td class="col-1" > {{teamMember.isActive}} </td>
+          <td class="col-1" ><img src = "{{teamMember.photoPath}}" style="width: 20px; height: 20px;"/></td>
+          <td class="col-1" >Delete</td>
+        </tr>
+
+      </tbody>
+    </table>
+</div>
+
+<!-- <div class="panel panel-primary" *ngFor="let teamMember of teamMembers">
+
+  <div class="panel-heading">
+    <h3 class="panel-title"> {{teamMember.name}} </h3>
+  </div>
+
+  <div class="panel-body">
+    <div class="col-xs-10">
+      <div class="row">
+
+        <div class="col-xs-4">
+          <img class="imageClass" style="width: 120px; height: 120px;" [src]="teamMember.photoPath"/>
+        </div>
+
+        <div class="col-xs-8">
+
+          <div class="row">
+            <div class="col-xs-6">
+              Name
+            </div>
+            <div class="col-xs-6">
+              : {{teamMember.name}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Email
+            </div>
+            <div class="col-xs-6">
+              : {{teamMember.email}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Phone Number
+            </div>
+            <div class="col-xs-6">
+              : {{teamMember.phoneNo}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Date Of Joining
+            </div>
+            <div class="col-xs-6">
+              : {{teamMember.doj | date}}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              Active
+            </div>
+            <div class="col-xs-6">
+              : {{teamMember.isActive}}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div> -->

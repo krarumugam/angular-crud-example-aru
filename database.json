@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Test Product",
+      "description": "Description of the product",
+      "price": 1000,
+      "quantity": 100
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "Aru",
+      "email": "aru@gmail.com",
+      "phoneNo": 123456789,
+      "doj": "1/2/2013",
+      "isActive": true,
+      "photoPath": "assets/images/male.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sakthi",
+      "email": "Sakthi@gmail.com",
+      "phoneNo": 456789123,
+      "doj": "1/2/2014",
+      "isActive": true,
+      "photoPath": "assets/images/male.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Kathir",
+      "email": "Kathir@gmail.com",
+      "phoneNo": 987456123,
+      "doj": "1/2/2015",
+      "isActive": true,
+      "photoPath": "assets/images/male.jpg"
+    },
+    {
+      "name": "Arumugam",
+      "email": "krarumugam@gmail.com",
+      "phoneNo": "258741369",
+      "doj": "2019-07-03",
+      "isActive": "true",
+      "photoPath": "assets/images/male.jpg",
+      "id": 4
+    },
+    {
+      "name": "Soundaravalli",
+      "email": "Soundaravalli@gmail.com",
+      "phoneNo": "258639741",
+      "doj": "2019-08-06",
+      "isActive": "true",
+      "photoPath": "assets/images/female.jpg",
+      "id": 5
+    }
+  ]
+}

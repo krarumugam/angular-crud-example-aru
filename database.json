@@ -70,6 +70,24 @@
       "isActive": "true",
       "photoPath": "assets/images/female.jpg",
       "id": 5
+    },
+    {
+      "name": "Arumugam",
+      "email": "krarumugam@gmail.com",
+      "phoneNo": "",
+      "doj": "",
+      "isActive": "",
+      "photoPath": "",
+      "id": 6
+    },
+    {
+      "name": "sdfad",
+      "email": "krarumugam@ceiamerica.com",
+      "phoneNo": "3421431",
+      "doj": "2020-04-02",
+      "isActive": "true",
+      "photoPath": "",
+      "id": 7
     }
   ]
 }

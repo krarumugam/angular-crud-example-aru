@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { CommonService } from 'src/app/common.service';
 import { Validators } from '@angular/forms';
+import { Router} from '@angular/router';
 
 
 @Component({
@@ -10,6 +11,7 @@ import { Validators } from '@angular/forms';
   , styleUrls: ['./create-team-members.component.scss']
 })
 export class CreateTeamMembersComponent implements OnInit {
+
 
   //profileForm: FormGroup;
   profileForm = this.fb.group({
@@ -20,7 +22,7 @@ export class CreateTeamMembersComponent implements OnInit {
     isActive: [''],
     photoPath: [''],
   });
-  constructor(private fb: FormBuilder, private commonSerive: CommonService) { }
+  constructor(private fb: FormBuilder, private commonSerive: CommonService, private router: Router) { }
   ngOnInit(): void {
 
   }
@@ -31,8 +33,8 @@ export class CreateTeamMembersComponent implements OnInit {
     this.commonSerive.addTeamMember(this.profileForm.value).subscribe((Response) => {
       console.log('this is test');
     })
+    this.router.navigate(['/list']);
   }
-
 
 
 }

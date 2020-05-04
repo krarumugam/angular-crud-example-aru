@@ -14,14 +14,16 @@
       </thead>
       <tbody>
         <tr class="d-flex" *ngFor="let teamMember of teamMembers">
-          <td class="col-1" > {{teamMember.id}} </td>
-          <td class="col-2" > {{teamMember.name}} </td>
-          <td class="col-2" > {{teamMember.email}} </td>
-          <td class="col-1" > {{teamMember.phoneNo}} </td>
-          <td class="col-1" > {{teamMember.doj}} </td>
-          <td class="col-1" > {{teamMember.isActive}} </td>
-          <td class="col-1" ><img src = "{{teamMember.photoPath}}" style="width: 20px; height: 20px;"/></td>
-          <td class="col-1" >Delete</td>
+          <td class="col-1" #id> {{teamMember.id}} </td>
+          <td class="col-2" #name><a routerLink="/create" (click)="updateTeamMember(teamMember)">
+            {{teamMember.name}} </a></td>
+          <td class="col-2" #email> {{teamMember.email}} </td>
+          <td class="col-1" #phoneNo> {{teamMember.phoneNo}} </td>
+          <td class="col-1" #doj> {{teamMember.doj}} </td>
+          <td class="col-1" #isActive> {{teamMember.isActive}} </td>
+          <td class="col-1" #photoPath><img src = "{{teamMember.photoPath}}" style="width: 20px; height: 20px;"/></td>
+          <!-- <td class="col-1" > Delete </td> -->
+          <td class="col-1" ><img src = "assets/images/delete_blue.jpg" style="width: 20px; height: 20px;"/></td>
         </tr>
 
       </tbody>

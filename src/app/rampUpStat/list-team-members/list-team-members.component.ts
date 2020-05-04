@@ -5,7 +5,7 @@ import { CommonService } from 'src/app/common.service';
 @Component({
   selector: 'app-list-team-members',
   templateUrl: './list-team-members.component.html'
-  ,  styleUrls: ['./list-team-members.component.scss']
+  , styleUrls: ['./list-team-members.component.scss']
 })
 export class ListTeamMembersComponent implements OnInit {
 
@@ -41,16 +41,23 @@ export class ListTeamMembersComponent implements OnInit {
 
   teamMembers;
 
-  constructor(private commonService:CommonService) { }
+  constructor(private commonService: CommonService) { }
 
   ngOnInit(): void {
 
-this.commonService.getAllTeamMember().subscribe(data=> {
-console.log(data);
-this.teamMembers = data;
-//this.teamMembers = data.result;
+    this.commonService.getAllTeamMember().subscribe(data => {
+      console.log(data);
+      this.teamMembers = data;
+      //this.teamMembers = data.result;
     });
 
+  }
+
+  updateTeamMember (teamMember: any){
+    console.log("test aru");
+    console.log(teamMember);
+
+    this.teamMembers = teamMember;
   }
 
 
